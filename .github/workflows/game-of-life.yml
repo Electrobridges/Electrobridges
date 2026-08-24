@@ -1,0 +1,38 @@
+name: Generate Game of Life animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render Game of Life SVGs
+        run: |
+          python .github/scripts/game_of_life.py \
+            --user "${{ github.repository_owner }}" \
+            --token "${{ secrets.GITHUB_TOKEN }}" \
+            --out-light dist/game-of-life.svg \
+            --out-dark dist/game-of-life-dark.svg
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
