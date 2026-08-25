@@ -1,7 +1,9 @@
 <!-- Banner -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:326CE5,100:1a1b27&height=200&section=header&text=Daniel%20Puentes&fontSize=48&fontColor=ffffff&fontAlignY=35&desc=DevOps%20%C2%B7%20SysAdmin%20%C2%B7%20On-Prem%20%26%20Cloud%20Infrastructure&descSize=17&descAlignY=58" width="100%" alt="header" />
+<img src="banners/banner-glow-neon-daniel-puentes.svg" width="100%" alt="Daniel Puentes - ElectroBridges" />
+
+<br/><br/>
 
 <a href="https://github.com/electrobridges">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=2496ED&center=true&vCenter=true&width=680&lines=DevOps+%26+Systems+Engineer;On-prem+infra+%E2%80%94+Proxmox%2C+Kubernetes%2C+Coolify;Networking%2C+VPN+%26+reverse+proxies+that+stay+up;Automation%2C+CI%2FCD+%26+observability;Backend+across+Python%2C+Java%2C+C%23+%26+PHP" alt="typing" />
