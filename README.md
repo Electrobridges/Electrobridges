@@ -6,7 +6,7 @@
 <br/><br/>
 
 <a href="https://github.com/electrobridges">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=2496ED&center=true&vCenter=true&width=680&lines=DevOps+%26+Systems+Engineer;On-prem+infra+%E2%80%94+Proxmox%2C+Kubernetes%2C+Coolify;Networking%2C+VPN+%26+reverse+proxies+that+stay+up;Automation%2C+CI%2FCD+%26+observability;Backend+across+Python%2C+Java%2C+C%23+%26+PHP" alt="typing" />
+  <img src="https://raw.githubusercontent.com/electrobridges/electrobridges/output/typing.svg" alt="DevOps &amp; Systems Engineer" width="680" />
 </a>
 
 <br/>
@@ -16,7 +16,11 @@
 
 <br/>
 
-<img height="165" src="https://streak-stats.demolab.com/?user=electrobridges&theme=tokyonight&hide_border=true&border_radius=12" alt="streak" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak.svg" />
+  <img height="165" src="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak.svg" alt="GitHub contribution streak" />
+</picture>
 
 </div>
 
@@ -143,7 +147,11 @@ I build and run **infrastructure that has to stay up** — from bare metal and h
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=electrobridges&theme=tokyo-night&hide_border=true&radius=12&area=true" alt="activity graph" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/electrobridges/electrobridges/output/activity-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/electrobridges/electrobridges/output/activity.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/electrobridges/electrobridges/output/activity.svg" alt="Weekly contribution activity" />
+</picture>
 
 <br/>
 

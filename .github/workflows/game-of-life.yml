@@ -1,4 +1,4 @@
-name: Generate Game of Life animation
+name: Generate profile SVGs
 
 on:
   schedule:
@@ -29,6 +29,15 @@ jobs:
             --out-light dist/game-of-life.svg \
             --out-dark dist/game-of-life-dark.svg
 
+      - name: Render streak, activity and typing cards
+        run: |
+          python .github/scripts/profile_cards.py \
+            --user "${{ github.repository_owner }}" \
+            --token "${{ secrets.GITHUB_TOKEN }}" \
+            --out-dir dist
+
+      # Both scripts write into dist/ and it is published once: a second workflow
+      # publishing the same build_dir would replace the branch, not merge into it.
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
