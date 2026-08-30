@@ -220,9 +220,10 @@ def render_streak(stats, theme_name):
                 'stroke-width="4" stroke-linecap="round" transform="rotate(-90 %d 70)"/>'
                 % (cx, t["flame"], cx))
             parts.append(
-                '<path transform="translate(%d 18) scale(.62)" fill="%s" d="M0 -12'
-                'c4 5 2 7 3 10c1 2 4 2 4 -2c2 3 2 7 0 10c-2 3 -10 3 -12 0'
-                'c-2 -3 -2 -7 1 -11c0 4 2 5 3 3c1 -3 1 -6 1 -10z"/>' % (cx, t["flame"]))
+                '<path transform="translate(%d 19)" fill="%s" d="M1 -16'
+                'c1 6 6 8 6 14c0 3 -1 5 -3 6c1 -4 -1 -7 -3 -8c1 4 -1 6 -3 8'
+                'c-2 -2 -2 -5 -1 -8c-3 2 -4 6 -4 9a9 9 0 0 0 18 0'
+                'c0 -8 -6 -14 -10 -21z"/>' % (cx, t["flame"]))
         parts.append('<text x="%d" y="80" font-size="30" font-weight="700" fill="%s">%s</text>'
                      % (cx, t["text"], esc(value)))
         parts.append('<text x="%d" y="127" font-size="13" font-weight="600" fill="%s">%s</text>'
