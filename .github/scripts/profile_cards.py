@@ -188,7 +188,7 @@ def svg_open(width, height, label):
 
 def render_streak(stats, theme_name):
     t = THEMES[theme_name]
-    w, h, col = 495, 195, 165
+    w, h, col = 495, 205, 165
     panels = [
         (str(stats["total"]), "Total Contributions",
          fmt_range((stats["first"], stats["last"]), years=True)
@@ -216,23 +216,23 @@ def render_streak(stats, theme_name):
         parts.append('<g class="%s">' % cls)
         if ring:
             parts.append(
-                '<circle class="ring" cx="%d" cy="70" r="38" fill="none" stroke="%s" '
-                'stroke-width="4" stroke-linecap="round" transform="rotate(-90 %d 70)"/>'
+                '<circle class="ring" cx="%d" cy="90" r="38" fill="none" stroke="%s" '
+                'stroke-width="4" stroke-linecap="round" transform="rotate(-90 %d 90)"/>'
                 % (cx, t["flame"], cx))
             parts.append(
-                '<path transform="translate(%d 19)" fill="%s" d="M1 -16'
+                '<path transform="translate(%d 30)" fill="%s" d="M1 -16'
                 'c1 6 6 8 6 14c0 3 -1 5 -3 6c1 -4 -1 -7 -3 -8c1 4 -1 6 -3 8'
                 'c-2 -2 -2 -5 -1 -8c-3 2 -4 6 -4 9a9 9 0 0 0 18 0'
                 'c0 -8 -6 -14 -10 -21z"/>' % (cx, t["flame"]))
-        parts.append('<text x="%d" y="80" font-size="30" font-weight="700" fill="%s">%s</text>'
+        parts.append('<text x="%d" y="100" font-size="30" font-weight="700" fill="%s">%s</text>'
                      % (cx, t["text"], esc(value)))
-        parts.append('<text x="%d" y="127" font-size="13" font-weight="600" fill="%s">%s</text>'
+        parts.append('<text x="%d" y="147" font-size="13" font-weight="600" fill="%s">%s</text>'
                      % (cx, t["accent"] if ring else t["text"], esc(label.upper())))
-        parts.append('<text x="%d" y="148" font-size="11" fill="%s">%s</text>'
+        parts.append('<text x="%d" y="168" font-size="11" fill="%s">%s</text>'
                      % (cx, t["dim"], esc(sub)))
         parts.append("</g>")
         if i:
-            parts.append('<line x1="%d" y1="40" x2="%d" y2="155" stroke="%s" stroke-width="1"/>'
+            parts.append('<line x1="%d" y1="60" x2="%d" y2="175" stroke="%s" stroke-width="1"/>'
                          % (col * i, col * i, t["grid"]))
 
     parts.append("</svg>")

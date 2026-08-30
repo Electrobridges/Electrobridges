@@ -19,7 +19,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak.svg" />
-  <img height="165" src="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak.svg" alt="GitHub contribution streak" />
+  <img height="174" src="https://raw.githubusercontent.com/electrobridges/electrobridges/output/streak.svg" alt="GitHub contribution streak" />
 </picture>
 
 </div>
